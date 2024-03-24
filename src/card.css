@@ -1,0 +1,58 @@
+/* card.css */
+
+/* Common styles for both image and alphabet cards */
+.image-card,
+.alphabet-card {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    position: relative;
+    perspective: 1000px; /* Define the perspective for 3D effect */
+    margin: 10px; /* Adjust margin as needed */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+/* Container for flipping effect */
+.image-container,
+.alphabet-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    background-color: lightpink; /* Light pink background for image cards */
+    backface-visibility: hidden;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for back side of the card */
+.back,
+.alphabet-container .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none; /* Hide the back side of the card by default */
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; /* Adjust font size as needed */
+    color: black; /* Adjust font color as needed */
+    background-color: lightblue; /* Light blue background for alphabet cards */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+/* Additional styles for flipped state */
+.image-container.flipped,
+.alphabet-container.flipped {
+    transform: rotateY(180deg);
+}
+
+/* Styles for positioning all cards vertically */
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

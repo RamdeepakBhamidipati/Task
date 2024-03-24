@@ -1,0 +1,27 @@
+
+.alphabet-card {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    border-radius: 8px;
+    border-color: white;
+}
+
+.alphabet-card.matched {
+    background-color: lightgreen;
+}
+
+.alphabet-card:hover {
+    border-color: black;
+}
+
+.alphabet {
+    font-size: 24px;
+}
