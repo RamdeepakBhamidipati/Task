@@ -13,16 +13,22 @@
     align-items: center;
 }
 
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border: 2px solid #333;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    font-size: 1.2rem;
-    z-index: 1000;
-}
+/* .popup {
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    backgroundColor: '#4CAF50', // Green background
+    color: '#FFF', // White text color
+    padding: '20px 30px', // Increased padding for larger size
+    borderRadius: '10px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Shadow effect
+    fontSize: '18px',
+    fontWeight: 'bold',
+    fontFamily: 'Arial, sans-serif', // Stylish font
+    textAlign: 'center', // Center-align text
+    zIndex: '9999', // Ensure it appears on top of other elements
+    width: '150px',
+    height: '70px',
+    borderColor: 'aqua'
+} */

@@ -1,8 +1,8 @@
 import React from 'react';
 
 interface ResultProps {
-    tries: number;
-    bananasCollected: number;
+    tries?: number;
+    bananasCollected?: number;
 }
 
 const Result: React.FC<ResultProps> = ({ tries, bananasCollected }) => {
