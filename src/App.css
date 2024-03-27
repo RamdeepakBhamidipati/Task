@@ -5,13 +5,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Adjusted to start from top */
-}
+  justify-content: flex-start;
 
 .header {
   width: 100%;
   display: flex;
-  justify-content: space-between; /* Added to space between elements */
+  justify-content: space-between; 
   align-items: center;
   font-family: 'Poppins', sans-serif;
   color:cornflowerblue;
@@ -19,7 +18,6 @@
 }
 
 .game-title {
-  /* No need to specify align-items and justify-content for h1 */
   border: 2px solid #000;
   border-radius: 10px;
   padding: 30px;
@@ -39,10 +37,10 @@
   cursor: pointer;
   font-size: 24px;
   border: 2px solid gold;
-  margin: 10px; /* Adjusted margin */
+  margin: 10px; 
   display: flex;
-  align-items: center; /* Align button content vertically */
-  justify-content: center; /* Center-align text horizontally */
+  align-items: center; 
+  justify-content: center;
   width: 200px;
   height: 50px;
   text-align: center;}
