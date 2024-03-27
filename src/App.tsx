@@ -5,7 +5,7 @@ import './App.css';
 
 const App: React.FC = () => {
     const handleReset = () => {
-        window.location.reload(); // Reload the page when the button is clicked
+        window.location.reload(); 
     };
 
     return (
