@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
+}
 .header {
   width: 100%;
   display: flex;
@@ -43,5 +43,5 @@
   justify-content: center;
   width: 200px;
   height: 50px;
-  text-align: center;}
-
+  text-align: center;
+}
