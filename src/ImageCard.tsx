@@ -19,24 +19,24 @@ const ImageCard: React.FC<ImageCardProps> = ({ id, word, isMatched, onClick }) =
         }
     };
 
-    useEffect(() => {
-        if (isMatched) {
-            setPopupMessage('Matched');
-            setTimeout(() => {
-                setPopupMessage('');
-            }, 3000);
-        } else {
-            setPopupMessage('Not Matched');
-            setTimeout(() => {
-                setPopupMessage('');
-            }, 3000);
-        }
-    }, [isMatched]);
+    // useEffect(() => {
+    //     if (isMatched) {
+    //         setPopupMessage('Matched');
+    //         setTimeout(() => {
+    //             setPopupMessage('');
+    //         }, 3000);
+    //     } else {
+    //         setPopupMessage('Not Matched');
+    //         setTimeout(() => {
+    //             setPopupMessage('');
+    //         }, 3000);
+    //     }
+    // }, [isMatched]);
 
     return (
         <div className={`image-card ${isMatched ? 'matched' : ''} ${flipped ? 'flipped' : ''}`} onClick={handleClick}>
             <div className="word">{flipped || isMatched ? word : ''}</div>
-            {popupMessage && <div className={`popup ${isMatched ? 'matched' : 'not-matched'}`}>{popupMessage}</div>}
+            {/* {popupMessage && <div className={`popup ${isMatched ? 'matched' : 'not-matched'}`}>{popupMessage}</div>} */}
         </div>
     );
 };

@@ -3,12 +3,17 @@ import Game from './Game';
 import Card from './Card';
 import './App.css';
 
-
 const App: React.FC = () => {
+    const handleReset = () => {
+        window.location.reload(); // Reload the page when the button is clicked
+    };
 
     return (
         <div className="App">
-            <h1>Matching Game</h1>
+            <div className="header">
+                <h1 className="game-title">Matching Game</h1>
+                <button className="reset-button" onClick={handleReset}>Reset</button>
+            </div>
             <Game />
         </div>
     );
